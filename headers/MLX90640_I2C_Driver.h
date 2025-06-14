@@ -17,6 +17,10 @@
 #ifndef _MLX90640_I2C_Driver_H_
 #define _MLX90640_I2C_Driver_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdint.h>
 #include "MLX90640_API.h"
 
@@ -25,4 +29,9 @@
     extern int MLX90640_I2CRead(uint8_t slaveAddr,uint16_t startAddress, uint16_t nMemAddressRead, uint16_t *data);
     extern int MLX90640_I2CWrite(uint8_t slaveAddr,uint16_t writeAddress, uint16_t data);
     extern void MLX90640_I2CFreqSet(int freq);
+
+#ifdef __cplusplus
+}
+#endif
+
 #endif

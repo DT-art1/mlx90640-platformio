@@ -1,0 +1,24 @@
+{
+  "name": "mlx90640-pio",
+  "version": "1.0.0",
+  "description": "Platform-independent MLX90640 driver requiring custom I2C implementation.",
+  "keywords": ["mlx90640", "thermal", "sensor", "i2c"],
+  "authors":
+  [
+    {
+      "name": "DT-art1"
+    }
+  ],
+  "license": "Apache-2.0",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/DT-art1/mlx90640-platformio"
+  },
+  "homepage": "https://github.com/DT-art1/mlx90640-platformio",
+  "frameworks": "*",
+  "platforms": "*",
+  "build": {
+    "includeDir": "headers"
+  }
+}
